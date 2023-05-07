@@ -1,0 +1,28 @@
+.starting
+{
+    width: 100%;
+    min-height:50vh;
+    position: relative;
+    top: 60px;
+    background-color: #7DCBDD!important;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.boxes
+{
+    display: flex;
+    flex-direction: column;
+}
+.btn
+{
+    background-color: #d5d1e1; /* Green */
+  border: none;
+  padding: 18px 35px;
+  text-align: center;
+  text-decoration:slategrey;
+  display: inline-block;
+  font-size: 22px;
+  align-content: center;
+  border-radius: 16px;
+}

@@ -4,6 +4,7 @@ import "./Product_edit.css";
 import { NavLink, useParams } from 'react-router-dom' 
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import shopgenie_logo from "../../photos/blacklogoamazon.png"
 // just for finding and updating values in forms.
 
 const Product_edit = () => {
@@ -107,7 +108,7 @@ const Product_edit = () => {
         <section>
                 <div className="sign_container">
                     <div className="sign_header">
-                        <img src="./blacklogoamazon.png" alt="signupimg" />
+                        <img src={shopgenie_logo} alt="signupimg" />
                     </div>
                     <div className="sign_form">
                         <form method='POST'>

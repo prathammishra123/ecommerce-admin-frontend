@@ -1,0 +1,121 @@
+section{
+    position: relative;
+    width: 100%;
+    top: 60px;
+    min-height:100vh;
+    background-color: #76b2e7;   
+}
+
+.sign_container{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #76b2e7;
+}
+
+.sign_header img{
+    width: 200px;
+    margin-top: -40px;
+    cursor: pointer;
+}
+
+.sign_form{
+    border: 1px solid #0aa9f3;
+    padding: 10px 30px;
+    margin-top: -50px;
+    border-radius: 5px;
+}
+
+.sign_form h1{
+    font-weight: 500;
+    font-size: 27px;
+    margin: 10px 0;
+}
+
+.sign_form label{
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 1px;
+}
+
+.sign_form input{
+    width: 97%;
+    height: 27px;
+    /* padding: 3px 7px; */
+    border-radius: 3px;
+    outline: none;
+    border:1px solid #121212;
+    margin-bottom: 10px;
+    margin-top: 1px;
+}
+
+.sign_form .signin_btn{
+    margin-top: 7px;
+    margin-bottom: 23px;
+    width: 100%;
+    background: #0fe628;
+    cursor: pointer;
+    border:1px solid #319c41;
+    height: 29px;
+    outline: none;
+    border-radius: 3px;
+    color: #111;
+    background: linear-gradient(to bottom,#d1ea44,#c5df04);
+    font-size: 16px;
+    
+}
+
+.sign_form input:focus{
+    box-shadow: 0 0 5px 0px #31ee4d;
+}
+
+.sign_form .signin_info{
+    margin-top: 23px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.sign_form .signin_info p{
+    font-size: 13px;
+    font-weight: 600;
+    color: #222;
+}
+
+
+.sign_form .signin_info a{
+    font-size: 13px;
+    letter-spacing: .5px;
+    margin-left: 5px;
+    color: #0066c0;
+    text-decoration: none;
+    font-weight:600;
+}
+
+
+/* for login page */
+.create_accountinfo p{
+    font-size: 25px;
+    text-align: center;
+    color: #0f0e0e;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.create_accountinfo button{
+    background: linear-gradient(to bottom,#f7f8fa,#e7e9ec);
+    height: 29px;
+    width: 300px;
+    border-radius: 3px;
+    border: 1px solid #0d0d0e;
+    outline: none;
+    margin-top: 15px;
+}
+
+.create_accountinfo a{
+    text-decoration: none;
+    color: #111;
+    padding: 10px 35px;
+    letter-spacing: .5px;
+}

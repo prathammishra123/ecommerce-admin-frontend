@@ -4,6 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { getProducts } from "../redux_admin/actions/action";
 import { useDispatch, useSelector } from "react-redux";
+import { Link } from 'react-router-dom';
 const Delete = ({deletedata}) => {
 //   const { account, setAccount } = useContext(Logincontext);
 const dispatch = useDispatch();
@@ -41,7 +42,7 @@ const dispatch = useDispatch();
   return (
     <div className="add_remove_select" >
     <p style={{ cursor: "pointer", fontSize: "25px" }}onClick={()=>removedata(deletedata)}>Delete</p>
-    <p style={{ cursor: "pointer", fontSize: "25px" }}>Edit</p>
+    <Link style={{ cursor: "pointer", fontSize: "25px" , alignContent:"center" }}to={`/admin_edit_product/${deletedata}`}> EDIT</Link>
     <ToastContainer/>
 </div>
   )

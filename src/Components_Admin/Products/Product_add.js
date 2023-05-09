@@ -101,13 +101,13 @@ const senddata = async (e) => {
                         </div>
                         <div className="form_data">
                             <label htmlFor="title">Product Title</label>
-                            <input type="object" name="title"
+                            <input type="text" name="title"
                                 id="title"onChange={adddata}
                                 value={udata.title}  />
                         </div>
                         <div className="form_data">
                             <label htmlFor="price">Product Price</label>
-                            <input type="object" name="price"
+                            <input type="text" name="price"
                                 id="price"onChange={adddata}
                                 value={udata.price} />
                         </div>

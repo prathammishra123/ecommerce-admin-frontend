@@ -6,7 +6,8 @@ const Analysis = () => {
   const [x, setx] = useState({});
   const [y, sety] = useState({});
   const [z, setz] = useState(0);
-
+  //  var x,y,z,data;
+  var data;
   const getdatabuy = async () => {
     const res = await fetch("http://localhost:8005/admin/analysis", {
       method: "GET",
@@ -17,35 +18,32 @@ const Analysis = () => {
       credentials: "include",
     });
 
-    const data = await res.json();
+    const obj = await res.json();
+    console.log(obj);
+    const  {proarr,x,y,z}=obj;
+     data =proarr;
+     setx(x);
+     sety(y);
+     setz(z);
     if (res.status !== 200) {
       alert("No data available");
     } else {
-       await setCartdata(data);
+     
+      console.log("x is"+x);
+      console.log("y is"+y);
+      console.log("z is"+z);
+      console.log("data is "+data);
+       await  setCartdata(data);
       console.log("yes1");
-      await  calculation();
       console.log("yes2");
     }
   };
 
   const calculation =  () => {
-    setx(cartdata[0]);
-    sety(cartdata[0]);
-    let sum = 0;
-    let arr = cartdata.map((item) => {
-      if (item.no_of_times < x.no_of_times) {
-        setx(item);
-      }
-      if (item.no_of_times > y.no_of_times) {
-        sety(item);
-      }
-      sum += item.no_of_times;
-    });
-    setz(sum);
+   
   };
   useEffect(() => {
     getdatabuy();
-    
   }, []);
   // console.log(x,y,z);
 
